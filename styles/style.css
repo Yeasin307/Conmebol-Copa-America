@@ -9,6 +9,11 @@
  main{
     margin: 100px 100px;
  }
+ footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
  /* ------------
  header-section 
  ---------------*/
@@ -105,16 +110,16 @@ header:hover .background-4{
  /* ---------------
  Footer section 
  -----------------*/
- footer{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
+
+ .social-icon a{
+     color:blueviolet;
+     font-size: 24px;
  }
  /* ---------------
  Media query 
  -----------------*/
  /* ---------------
- For Mobile 
+ For Mobile(Galaxy S5)
  -----------------*/
  @media only screen and (max-width:688px) {
     .tournament-discription{
@@ -135,7 +140,7 @@ header:hover .background-4{
      
  }
  /* ----------------
- For tablet 
+ For tablet(iPad)
  ------------------*/
  @media only screen and (min-width:688px) and (max-width:992px) {
     .tournament-discription{
