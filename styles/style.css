@@ -6,21 +6,20 @@
  body{
     font-family: 'Poppins', sans-serif;
  }
- header{
+ .tournament-discription{
     background-color: #2D25A0;
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:50px;
+    padding: 0 100px;
     height: 500px;
  }
  main{
-    margin: 0 100px;
+    margin: 100px 100px;
  }
  /* ------------
  header-section 
  ---------------*/
- /* .tournament-logo{
-     position: relative;
- } */
  .tournament-name{
     font-size: 64px;
     color: #FFFFFF;
@@ -51,17 +50,28 @@
      top: -250px;
      right: 3px;
  }
-.background-3 img{
+ .background-3{
+    position: relative;
+    top: -550px;
+}
+ .background-3 .logo-player{
     width: 400px;
     height: 350px;
     position: relative;
-     top: -550px;
-}
+    transition: transform .3s ease-in;
+ }
 .background-4{
     font-size: 50px;
     color:black;
     position: relative;
-    top: -750px;
+    top: -830px;
+    transition: transform .3s ease-out .3s;
+}
+header:hover .logo-player{
+    transform: rotate(30deg);
+}
+header:hover .background-4{
+    transform: translate(-100px,-100px);
 }
  /* ------------
  player section 
@@ -91,4 +101,46 @@
  }
  .player-info{
     color: #6C6C6C;
+ }
+ /* ---------------
+ Footer section 
+ -----------------*/
+ footer{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ .fire-football{
+     width: 500px;
+     height: 180px;
+ }
+ /* ---------------
+ Media query 
+ -----------------*/
+ /* ---------------
+ For Mobile 
+ -----------------*/
+ @media only screen and (max-width:688px) {
+    .tournament-discription{
+         grid-template-columns:repeat(1 , 1fr);
+         height: 1000px;
+     }
+     .players{
+         grid-template-columns: repeat(1 , 1fr);
+     }
+     
+ }
+ /* ----------------
+ For tablet 
+ ------------------*/
+ @media only screen and (min-width:688px) and (max-width:992px) {
+    .tournament-discription{
+         grid-template-columns:repeat(1 , 1fr);
+         height: 1000px;
+         padding-left: 200px;
+     }
+     .players{
+         grid-template-columns: repeat(2 , 1fr);
+     }
+     
  }
