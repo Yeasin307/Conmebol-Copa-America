@@ -6,9 +6,63 @@
  body{
     font-family: 'Poppins', sans-serif;
  }
+ header{
+    background-color: #2D25A0;
+    display: flex;
+    justify-content: space-evenly;
+    height: 500px;
+ }
  main{
     margin: 0 100px;
  }
+ /* ------------
+ header-section 
+ ---------------*/
+ /* .tournament-logo{
+     position: relative;
+ } */
+ .tournament-name{
+    font-size: 64px;
+    color: #FFFFFF;
+    width:500px;
+ }
+ .watch-button{
+    background-color: #E02C6D;
+    color: white;
+    padding: 10px 20px;
+    border: 3px solid #E02C6D;
+ }
+ .background-1{
+     height: 300px;
+     width: 350px;
+     border: 2px solid white;
+     border-radius: 0 80px 0 0;
+     position: relative;
+     top: 40px;
+     left: 20px;
+ }
+ .background-2{
+     height: 300px;
+     width: 350px;
+     border: 2px solid #3DBAFD;
+     border-radius: 0 80px 0 0;
+     background-color: #3DBAFD;
+     position: relative;
+     top: -250px;
+     right: 3px;
+ }
+.background-3 img{
+    width: 400px;
+    height: 350px;
+    position: relative;
+     top: -550px;
+}
+.background-4{
+    font-size: 50px;
+    color:black;
+    position: relative;
+    top: -750px;
+}
  /* ------------
  player section 
  --------------*/
