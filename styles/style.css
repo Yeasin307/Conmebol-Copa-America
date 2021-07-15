@@ -6,6 +6,12 @@
  body{
     font-family: 'Poppins', sans-serif;
  }
+ main{
+    margin: 100px 100px;
+ }
+ /* ------------
+ header-section 
+ ---------------*/
  .tournament-discription{
     background-color: #2D25A0;
     display: grid;
@@ -14,12 +20,6 @@
     padding: 0 100px;
     height: 500px;
  }
- main{
-    margin: 100px 100px;
- }
- /* ------------
- header-section 
- ---------------*/
  .tournament-name{
     font-size: 64px;
     color: #FFFFFF;
@@ -71,7 +71,7 @@ header:hover .logo-player{
     transform: rotate(30deg);
 }
 header:hover .background-4{
-    transform: translate(-100px,-100px);
+    transform: translate(-80px,-80px);
 }
  /* ------------
  player section 
@@ -110,10 +110,6 @@ header:hover .background-4{
      flex-direction: column;
      align-items: center;
  }
- .fire-football{
-     width: 500px;
-     height: 180px;
- }
  /* ---------------
  Media query 
  -----------------*/
@@ -124,9 +120,17 @@ header:hover .background-4{
     .tournament-discription{
          grid-template-columns:repeat(1 , 1fr);
          height: 1000px;
+         width: 500px;
      }
      .players{
          grid-template-columns: repeat(1 , 1fr);
+     }
+     main{
+         margin: 100px 180px;
+     }
+     footer{
+         width: 500px;
+         margin: 0 80px;
      }
      
  }
@@ -141,6 +145,9 @@ header:hover .background-4{
      }
      .players{
          grid-template-columns: repeat(2 , 1fr);
+     }
+     main{
+        margin: 100px 30px;
      }
      
  }
