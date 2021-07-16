@@ -115,6 +115,43 @@ header:hover .background-4{
      color:blueviolet;
      font-size: 24px;
  }
+ /* --------------------------
+ Winner List and Video section
+ ----------------------------*/
+ .winner-list-video{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-gap:50px;
+     margin-top: 50px;
+ }
+ /* ---------------
+ Table section 
+ ------------------*/
+ caption{
+     font-size: 32px;
+     color:navy;
+     font-weight: 700;
+ }
+ table,th,td{
+     border: 3px solid gray;
+     border-collapse: collapse;
+     font-size: 24px;
+     color: rebeccapurple;
+     box-shadow: 0 0 5px gray;
+ }
+ th,td{
+     padding: 15px;
+ }
+ th{
+     background-color: gray;
+ }
+ /* ---------------
+ video section 
+ ------------------*/
+ #video-title{
+    color: red;
+    font-size: 32px;
+ }
  /* ---------------
  Media query 
  -----------------*/
@@ -130,6 +167,13 @@ header:hover .background-4{
      .players{
          grid-template-columns: repeat(1 , 1fr);
      }
+     .winner-list-video{
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .video{
+        position: relative;
+        right: 80px;
+    }
      main{
          margin: 100px 180px;
      }
@@ -150,6 +194,15 @@ header:hover .background-4{
      }
      .players{
          grid-template-columns: repeat(2 , 1fr);
+     }
+     .winner-list-video{
+         grid-template-columns: repeat(1 , 1fr);
+     }
+     .champion-list{
+         padding-left: 130px;
+     }
+     .video{
+         padding-left: 80px;
      }
      main{
         margin: 100px 30px;
