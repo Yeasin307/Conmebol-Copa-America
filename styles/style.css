@@ -198,7 +198,7 @@ header:hover .background-4{
      .winner-list-video{
          grid-template-columns: repeat(1 , 1fr);
      }
-     .champion-list{
+     .winner-list{
          padding-left: 130px;
      }
      .video{
